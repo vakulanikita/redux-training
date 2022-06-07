@@ -1,6 +1,6 @@
 import { TodoAction, TodoActionTypes, TodoState } from "../../types/todo"
 
-const initialState = {
+const initialState: TodoState = {
   todos: [],
   page: 1,
   error: null,

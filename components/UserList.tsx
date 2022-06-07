@@ -1,10 +1,10 @@
 import React from 'react'
 import { useActions } from '../hooks/useActions';
-import { UseTypedSelector } from '../hooks/useTypedSelector';
+import { useTypedSelector } from '../hooks/useTypedSelector';
 import { fetchUsers } from '../redux/store/actionCreators/user';
 
 const UserList: React.FC = () => {
-  const {users, loading, error} = UseTypedSelector(state => state.user)
+  const {users, loading, error} = useTypedSelector(state => state.user)
 
   console.log(users, loading, error);
   const {fetchUsers} = useActions()
