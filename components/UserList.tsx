@@ -16,7 +16,6 @@ const UserList: React.FC = () => {
   if (loading) {
     return <h1>Идёт загрузка...</h1>
   }
-  
   if (error) {
     return <h1>{error}</h1>
   }
